@@ -9,12 +9,12 @@ class DayNightSwitcher {
     this.nightText = document.querySelector('.night-text');
     
     this.images = {
-      day: './assets/images/backgrounds/day.png',
-      night: './assets/images/backgrounds/night.png',
-      grayBack: './assets/images/backgrounds/gray-back.svg',
-      sunHalf: './assets/images/content/sun-half.png',
-      moonHalf: './assets/images/content/moon-half.png',
-      grayHalf: './assets/images/content/gray-half.png'
+      day: '/assets/images/backgrounds/day.png',
+      night: '/assets/images/backgrounds/night.png',
+      grayBack: '/assets/images/backgrounds/gray-back.svg',
+      sunHalf: '/assets/images/content/sun-half.png',
+      moonHalf: '/assets/images/content/moon-half.png',
+      grayHalf: '/assets/images/content/gray-half.png'
     };
     
     this.init();
