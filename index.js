@@ -499,32 +499,3 @@ document.addEventListener('DOMContentLoaded', function() {
   // Инициализация
   updateSlides();
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    function checkOverflow() {
-      const wideElements = [];
-      const viewportWidth = window.innerWidth;
-      
-      document.querySelectorAll('*').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.right > viewportWidth || rect.left < 0) {
-          wideElements.push({
-            element: el,
-            tag: el.tagName,
-            class: el.className,
-            left: rect.left,
-            right: rect.right,
-            width: rect.width
-          });
-        }
-      });
-      
-      if (wideElements.length > 0) {
-        console.log('Элементы выходящие за viewport:', wideElements);
-      }
-    }
-    
-    // Проверяем при загрузке и изменении размера
-    checkOverflow();
-    window.addEventListener('resize', checkOverflow);
-  })
