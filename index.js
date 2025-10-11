@@ -133,7 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const starIcon = star.querySelector('.star-icon');
       
       // Меняем иконку на желтую звезду
+<<<<<<< HEAD
       starIcon.src = '.ssets/images/icons/yellow-star.png';
+=======
+      starIcon.src = './assets/images/icons/yellow-star.png';
+>>>>>>> 7d38507ae91d4e788b5776bd515d2b89ae70a917
       star.classList.add('lit');
       
       // Анимация появления текста
@@ -158,7 +162,11 @@ document.addEventListener('DOMContentLoaded', function() {
     stars.forEach(star => {
       star.classList.remove('lit');
       const starIcon = star.querySelector('.star-icon');
+<<<<<<< HEAD
       starIcon.src = 'assets/images/icons/star.svg';
+=======
+      starIcon.src = './assets/images/icons/star.svg';
+>>>>>>> 7d38507ae91d4e788b5776bd515d2b89ae70a917
       const starText = star.querySelector('.star-text');
       starText.style.opacity = '0';
       starText.style.transform = 'translateY(10px)';
