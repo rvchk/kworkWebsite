@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gassets.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <nav class="nav nav-left" aria-label="Левая навигация">
+        <a href="#problems">Назначение</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#principle">Принцип работы</a>
+      </nav>
+
+      <div class="logo">
+        <a href="#" aria-label="На главную">
+          <img src="assets/images/icons/logo.svg" alt="">
+        </a>
+      </div>
+
+      <!-- Бургер-меню -->
+      <button class="burger-btn" aria-label="Открыть меню">
+        <img class="burger" src="assets/images/icons/burger.svg" alt="Меню" />
+      </button>
+
+      <!-- Мобильное меню -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <button class="close-mobile-menu" aria-label="Закрыть меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 6L5 18M5 6L19 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <ul>
+          <li><a href="#">Назначение</a></li>
+          <li><a href="#">Преимущества</a></li>
+          <li><a href="#">Принцип работы</a></li>
+          <li><a href="#">Вопросы</a></li>
+          <li><a href="#">Цена</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav nav-right" aria-label="Правая навигация">
+        <a href="#questions">Вопросы</a>
+        <a href="#price">Цена</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="hero">
+      <h1 class="hero-title">АЛЬФА-КОЛЫБЕЛЬ<br>МАЯТНИКОВАЯ КРОВАТЬ</h1>
+      <div class="hero-visual">
+        <img src="assets/images/content/bed.png" alt="Модель кровати" class="hero-image">
+      </div>
+      <p class="hero-subtitle-strong">
+        <strong>
+          Крепкий сон
+        </strong> 
+        без таблеток
+        <strong>
+          через 15 минут
+        </strong> 
+      </p>
+      <p class="hero-subtitle-note">на кровати, работающей на простых понятных принципах</p>
+      <button class="hero-cta" type="button" onclick="openModal()">Получить консультацию</button>
+    </section>
+  </main>
+  
+  
+  <section class="problems">
+    <h2 class="problems-title" id="problems">Какие проблемы решает<br><strong>маятниковая кровать?</strong></h2>
+    <div class="problems-stage">
+      <img src="assets/images/content/bed2.png" alt="Кровать" class="problems-image" />
+      <ul class="problem-ring">
+        <li class="problem" style="--angle:-150deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>бессонница</span></li>
+        <li class="problem" style="--angle:-170deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>нервное напряжение</span></li>
+        <li class="problem" style="--angle:-200deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>стресс и усталость</span></li>
+        <li class="problem" style="--angle:-30deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>поверхностный сон</span></li>
+        <li class="problem" style="--angle:-10deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>ранние пробуждения</span></li>
+        <li class="problem" style="--angle:20deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>трудности с засыпанием</span></li>
+        <li class="problem center-problem" style="--angle:95deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>тревога и беспокойство</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <h2 class="advantages-title" id="advantages">
+      <strong>Преимущества</strong>
+      маятниковой кровати
+    </h2>
+    
+    <div class="advantages-constellation">
+      <div class="star-item star-1" id="star-1" data-text="Спи во всех фазах как здоровый человек">
+        <img src="assets/images/icons/star.svg" alt="" class="star-icon" aria-hidden="true">
+        <span class="star-text">Спи во всех фазах как здоровый человек</span>
+      </div>
+      
+      <div class="star-item star-2" id="star-2" data-text="Избавься от стресса и усталости по причине плохого сна">
+        <img src="assets/images/icons/star.svg" alt="" class="star-icon" aria-hidden="true">
+        <span class="star-text">Избавься от стресса и усталости по причине плохого сна</span>
+      </div>
+      
+      <div class="star-item star-3" id="star-3" data-text="Сними нервное напряжение и тревогу">
+        <img src="assets/images/icons/star.svg" alt="" class="star-icon" aria-hidden="true">
+        <span class="star-text">Сними нервное напряжение и тревогу</span>
+      </div>
+      
+      <div class="star-item star-4" id="star-4" data-text="Исправь поверхностный сон на глубокий крепкий">
+        <img src="assets/images/icons/star.svg" alt="" class="star-icon" aria-hidden="true">
+        <span class="star-text">Исправь поверхностный сон на глубокий крепкий</span>
+      </div>
+      
+      <div class="star-item star-5" id="star-5" data-text="Забудь про трудности с засыпанием">
+        <img src="assets/images/icons/star.svg" alt="" class="star-icon" aria-hidden="true">
+        <span class="star-text">Забудь про трудности с засыпанием</span>
+      </div>
+      
+      <div class="star-item star-6" id="star-6" data-text="Вставай утром выспавшимся всегда">
+        <img src="assets/images/icons/star.svg" alt="" class="star-icon" aria-hidden="true">
+        <span class="star-text">Вставай утром выспавшимся всегда</span>
+      </div>
+      
+      <div class="star-item star-7" id="star-7" data-text="Спи во всех фазах как здоровый человек">
+        <img src="assets/images/icons/star.svg" alt="" class="star-icon" aria-hidden="true">
+        <span class="star-text">Спи во всех фазах как здоровый человек</span>
+      </div>
+      
+      <!-- Соединительные линии в форме ковша -->
+      <svg class="constellation-lines" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+        <path class="line line-1" fill="none"/>
+        <path class="line line-2" fill="none"/>
+        <path class="line line-3" fill="none"/>
+        <path class="line line-4" fill="none"/>
+        <path class="line line-5" fill="none"/>
+        <path class="line line-6" fill="none"/>
+        <path class="line line-7" fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="principle">
+    <h2 class="principle-title" id="principle">Принцип действия маятника</h2>
+    <p class="principle-subtitle">понятен, прост и изучен</p>
+    
+    <div class="principle-content">
+      <div class="visual-item">
+        <img src="assets/images/content/bed.png" alt="Кровать" class="visual-image">
+      </div>
+      <p class="principle-text">Маятниковая кровать совершает 60-70 мягких покачиваний в минуту, воздействует на вестибулярный аппарат и дает мозгу сигнал безопасности. Это помогает быстрее заснуть и сделать сон глубже</p>
+      <div class="visual-item">
+        <img src="assets/images/content/ear-system.png" alt="Вестибулярный аппарат" class="visual-image">
+      </div>
+      <p class="principle-text">Маятниковая кровать работает по тому же принципу <br> что и детская люлька</p>
+      <div class="visual-item">
+        <img src="assets/images/content/sleeping-man.png" alt="Спящий человек" class="visual-image">
+      </div>
+      <p class="principle-text">В утробе плод 9 месяцев живет в ритме сердца матери — этот звук ассоциируется у него с покоем и безопасностью. Вестибулярный аппарат, который находится во внутреннем ухе, реагирует на ритмичные покачивания. Поэтому мягкое укачивание воспринимается мозгом как знакомый сигнал безопасности: тревога снижается, тело расслабляется, сон становится спокойным и крепким</p>
+    </div>
+
+    <div class="principle-visual">
+      <div class="visual-item">
+        <img src="assets/images/content/bed.png" alt="Кровать" class="visual-image">
+      </div>
+      <img src="assets/images/icons/arrow.svg" alt="" class="visual-arrow" aria-hidden="true">
+      <div class="visual-item">
+        <img src="assets/images/content/ear-system.png" alt="Вестибулярный аппарат" class="visual-image">
+      </div>
+      <img src="assets/images/icons/arrow.svg" alt="" class="visual-arrow" aria-hidden="true">
+      <div class="visual-item">
+        <img src="assets/images/content/sleeping-man.png" alt="Спящий человек" class="visual-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="day-night">
+    <h2>
+      <strong>Используйте 100% возможностей</strong>
+      — днём и ночью
+    </h2>
+    <div class="day-night-mobile">
+      <img src="/assets/images/content/sun-half.png" alt="" class="sun">
+      <h2 class="sun-text">
+        <strong>Днём - снимает стресс</strong>, успокаивает нервную систему и снижает тревожность. Достаточно прилечь на 15 минут
+      </h2>
+      <img src="/assets/images/content/moon-half.png" alt="" class="moon">
+      <h2 id="moon-text">
+        <strong>Ночью - помогает быстрее заснуть</strong>, улучшает качество сна и уменьшает ночные пробуждения
+      </h2>
+    </div>
+    <div class="background">
+        <div class="day-side"></div>
+        <div class="night-side"></div>
+    </div>
+
+    <div class="switch-container">
+      <div class="switch on">
+        <div class="slider"></div>
+      </div>
+    </div>
+    
+    <div class="center-circle">
+        <div class="sun-half"></div>
+        <div class="moon-half"></div>
+    </div>
+    <div class="bottom-texts">
+      <p class="day-text">
+        <strong>Днём</strong> - снимает стресс, успокаивает нервную систему и снижает тревожность. <br> Достаточно прилечь на 15 минут
+      </p>
+      <p class="night-text">
+        <strong>Ночью</strong> - помогает быстрее заснуть, улучшает качество сна и уменьшает ночные пробуждения
+      </p>
+    </div>
+  </section>
+
+  <section class="specs">
+    <h2 class="specs-title">Технические характеристики кровати</h2>
+    <p class="specs-subtitle">Кровать разработана с учетом ежедневного использования. Мы сделали удобно, практично и надежно. Вы сможете лично в этом убедиться</p>
+    <div style="display: flex; max-width: 1200px; margin: 0 auto;">
+      <div class="specs-content">
+        <!-- Пункт 1 -->
+        <div class="specs-item">
+        <img src="assets/images/icons/gear.svg" alt="" class="specs-icon">
+        <div class="specs-content">
+          <div class="specs-text">
+            <strong>Удобное управление</strong><br>
+            Управление кроватью осуществляется как пультом так и приложением. Выбирайте что вам ближе и наслаждайтесь качественным сном
+          </div>
+          <div class="specs-icons">
+            <img src="assets/images/icons/apple.svg" alt="Apple" class="spec-os-icon">
+            <img src="assets/images/icons/android.svg" alt="Android" class="spec-os-icon">
+          </div>
+        </div>
+      </div>
+
+      <div class="visual-items visual-items-mobile">
+        <img src="assets/images/content/mobile-app.png" alt="Кровать">
+        <img src="assets/images/content/controller.png" alt="Кровать">
+      </div>
+    
+        <!-- Пункт 2 -->
+        <div class="specs-item">
+          <img src="assets/images/icons/wrench.png" alt="" class="specs-icon">
+          <div class="specs-text" style="margin-bottom: 80px;">
+            <strong>Усиленный механизм</strong><br>
+            Надежный и долговечный. Рассчитан на вес до 120 кг
+          </div>
+        </div>
+
+        <div class="rounded-visual-item visual-items-mobile">
+          <img src="assets/images/content/construction.png" alt="" aria-hidden="true">
+        </div>
+    
+        <!-- Пункт 3 -->
+        <div class="specs-item">
+          <img src="assets/images/icons/lightning.svg" alt="" class="specs-icon">
+          <div class="specs-text">
+            <strong>Ваша скорость качания</strong><br>
+            Амплитуда колебаний настраивается под ваш комфорт. Рекомендуемая частота 60 раз в минуту
+          </div>
+        </div>
+    
+        <!-- Пункт 4 -->
+        <div class="specs-item">
+          <img src="assets/images/icons/timer.svg" alt="" class="specs-icon">
+          <div class="specs-text">
+            <strong>Удобный таймер</strong><br>
+            Возможность запуска обратного отсчета до остановки качания. В среднем 15 минут достаточно для погружения в глубокий сон
+          </div>
+        </div>
+    
+        <!-- Пункт 5 -->
+        <div class="specs-item">
+          <img src="assets/images/icons/moon.svg" alt="" class="specs-icon">
+          <div class="specs-text">
+            <strong>Использовать как обычную кровать</strong><br>
+            Возможность использовать в качестве обычной классической кровати. Имеется удобный рычаг, повернув который, маятник стопорится
+          </div>
+        </div>
+      </div>
+    
+      <div class="specs-visual">
+        <div class="visual-items">
+          <img src="assets/images/content/mobile-app.png" alt="Кровать">
+          <img src="assets/images/content/controller.png" alt="Кровать">
+        </div>
+        <div class="rounded-visual-item">
+          <img src="assets/images/content/construction.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-it-works">
+    <h2>Почему успокаивающие движения <br> <strong>работают?</strong></h2>
+    <div class="before-after">
+      <div class="before">
+        <div class="before-block">
+          <div class="before-img">
+            <img src="/assets/images/content/before1.jpg" alt="">
+            <span>До</span>
+          </div>
+          <p>
+            В моменты стресса мы неосознанно начинаем покачиваться взад-вперед. Организм сам начинает делать то, что ему помогает успокоиться
+          </p>
+          <p>
+            переминаться с ноги на ногу <br>
+            барабанить по столу <br>
+            различными движениями совершать колебания
+          </p>
+        </div>
+        <img class="vector1" src="assets/images/content/vector1.svg" alt="">
+        <div class="before-block">
+          <div class="before-img">
+            <img src="/assets/images/content/before2.jpg" alt="">
+            <span>До</span>
+          </div>
+          <p>
+            Принципы нашей кровати и успокаивающих движений одинаковые. Они всегда работают безотказно. Это биология. Это наша природа. Так мы устроены
+          </p>
+        </div>
+      </div>
+      <div class="after">
+        <div class="after-block">
+          <div class="after-img">
+            <img src="/assets/images/content/after1.jpg" alt="">
+            <span>После</span>
+          </div>
+          <p>
+            Выполняя эти действия мы ищем для себя успокаивающий ритм - ритм сердцебиения. Это возвращает нас в комфортное состояние, помогает справляться со стрессом. 
+          </p>
+        </div>
+        <img class="vector2" src="assets/images/content/vector2.svg" alt="">
+        <div class="after-block">
+          <div class="after-img">
+            <img src="/assets/images/content/after2.jpg" alt="">
+            <span>После</span>
+          </div>
+          <p>
+            Покачивания в моменты стресса, повышенная концентрация внимания и прилив сил во время опасности, возникающее желание пить - это базовые реакции, рабочие
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="close-eyes">
+      <img src="/assets/images/content/eyes-anim.gif" alt="">
+      <p>
+        А теперь <strong>закройте глаза</strong> и представьте чудный сон. Как все еще возможно спать как младенец. Высыпаться и быть бодрым, сильным, продуктвиным, веселым и активным в течение дня. В любом возрасте.
+      </p>
+      <div>
+        <button class="blue-button">Купить</button>
+        <button class="black-button">Задать вопрос</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillows">
+    <h2>
+      Вы можете применять практики… <br>
+      Или просто лечь и <strong>уснуть за 15 минут</strong>
+    </h2>
+    <div class="pillows-slider">
+      <div class="slides">
+        <div class="slide">
+          <div class="slide-content">
+            <p>Аудиальные методы</p>
+            <span>
+              Белый/розовый/коричневый шум <br>
+              Природные звуки: <br>
+              Дождь, гром <br>
+              Океанские волны, прибой <br>
+              Шум леса, пение птиц <br>
+              Треск костра <br>
+              Аудиокниги и подкасты <br>
+              Бинауральные ритмы <br>
+              Мантры, аффирмации <br>
+              Колыбельные, классическая музыка <br>
+              ASMR 
+            </span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <p>Аудиальные методы</p>
+            <span>
+              Белый/розовый/коричневый шум <br>
+              Природные звуки: <br>
+              Дождь, гром <br>
+              Океанские волны, прибой <br>
+              Шум леса, пение птиц <br>
+              Треск костра <br>
+              Аудиокниги и подкасты <br>
+              Бинауральные ритмы <br>
+              Мантры, аффирмации <br>
+              Колыбельные, классическая музыка <br>
+              ASMR 
+            </span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <p>Аудиальные методы</p>
+            <span>
+              Белый/розовый/коричневый шум <br>
+              Природные звуки: <br>
+              Дождь, гром <br>
+              Океанские волны, прибой <br>
+              Шум леса, пение птиц <br>
+              Треск костра <br>
+              Аудиокниги и подкасты <br>
+              Бинауральные ритмы <br>
+              Мантры, аффирмации <br>
+              Колыбельные, классическая музыка <br>
+              ASMR 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-btn">‹</button>
+        <button class="next-btn">›</button>
+      </div>
+    </div>
+    <p>
+      А самое главное - Вам больше не придется засыпать под телевизор, телефон, плеер. Мало того, что мозг не отдыхает, так это еще влияет на качество сна
+    </p>
+  </section>
+
+  <section class="sleep-stages">
+    <h2><strong>Стадии сна</strong> наше все</h2>
+    <p>
+      Маятниковая кровать Альфа Колыбель настраивает необходимое чередование и время стадий сна. Чтобы ваш организм работал как часы, вы высыпались и были активны в течение дня
+    </p>
+    <div class="stages">
+      <div class="left-stages">
+        <div class="stages-card">
+        <div class="card-header">
+          <h3>Легкий сон</h3>
+          <span>Тета-волны + "Сонные веретена" и "K-комплексы"</span>
+          <div class="progress">
+            <h4 class="progress-text">45-55%</H4>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p>Сон углубляется, тело расслабляется, температура и сердечный ритм снижаются. Мозг обрабатывает и консолидирует память</p>
+        </div>
+
+        <div class="green-orange-dna-wave dna-wave">
+          
+        </div>
+        </div>
+        <div class="stages-card">
+          <div class="card-header">
+            <h3>БДГ-фаза, Фаза сновидений</h3>
+            <span>Бета-волны (как при бодрствовании)</span>
+            <div class="progress">
+              <h4 class="progress-text">20-25%</H4>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <p>Активный мозг при парализованном теле. Именно в эту фазу мы видим самые яркие и narrative сны. Отвечает за обработку эмоций, творчество и консолидацию procedural памяти (навыки)</p>
+          </div>
+
+          <div class="blue-dna-wave dna-wave">
+          
+        </div>
+        </div>
+      </div>
+      <div class="right-stages">
+        <div class="stages-card">
+        <div class="card-header">
+          <h3>Дремота, переход в сон</h3>
+          <span>Тета-волны</span>
+          <div class="progress">
+            <h4 class="progress-text">5%</H4>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p>Легкий сон, легко разбудить. Может быть ощущение падения (гипнагогические подергивания).</p>
+        </div>
+
+        <div class="green-dna-wave dna-wave">
+          
+        </div>
+      </div>
+      <div class="stages-card">
+        <div class="card-header">
+          <h3>Глубокий сон</h3>
+          <span>Дельта-волны</span>
+          <div class="progress">
+            <h4 class="progress-text">15-25%</H4>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p>Самый глубокий и восстановительный сон. Очень трудно разбудить. Происходит физическое восстановление, укрепление иммунитета, рост тканей.</p>
+        </div>
+
+        <div class="orange-dna-wave dna-wave">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qna">
+    <div class="qna-content" id="questions">
+      <div class="answers">
+        <h2>Ответы на частые вопросы</h2>
+        <div class="faq-item open-question">
+          <div class="faq-question">Какая гарантия? <img src="/assets/images/icons/mini-star.svg" alt=""></div>
+          <div class="faq-answer">
+            На кровать - 1 год. На механизм качения - 1 год. Но мы очень дружелюбны. 
+            Всегда идем навстречу и готовы исправить проблемы даже по истечению срока гарантии.
+          </div>
+        </div>
+
+        <div class="faq-item open-question">
+          <div class="faq-question">Какой вес выдерживает кровать? <img src="/assets/images/icons/mini-star.svg" alt=""></div>
+          <div class="faq-answer">
+            На кровать - 1 год. На механизм качения - 1 год. Но мы очень дружелюбны. 
+            Всегда идем навстречу и готовы исправить проблемы даже по истечению срока гарантии.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">С какого возраста рекомендуется покупать? <img src="/assets/images/icons/mini-star.svg" alt=""></div>
+          <div class="faq-answer">
+
+          </div>
+        </div>
+        <button class="black-button">Заказать кровать</button>
+      </div>
+      <div class="your-question">
+        <p>Не нашли ответа на свой вопрос?</p>
+        <span>Задайте нужный вопрос сейчас и получите скидку 10% уже сегодня</span>
+        <button class="blue-button" id="price">Задать вопрос</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="order-content">
+      <h2>Закажи Альфа Колыбель <br> сегодня со скидкой</h2>
+      <div class="order-grid"></div>
+      <img class="order-content-img" src="/assets/images/content/bed3.png" alt="">
+      <div class="offer-block">
+        <div class="offer-price">
+          <span>СО СКИДКОЙ СЕЙЧАС</span>
+          <h4>100 т.р</h4>
+          <h3>50 т.р</h3>
+          <div class="offer-price-button">
+            <button>скидка 50%</button>
+            <img src="/assets/images/icons/round-arrow.svg" alt="">
+          </div>
+          <p>Плати любым способом</p>
+          <div class="offer-pays">
+            <div>
+              <img src="/assets/images/icons/card.svg" alt="">
+              <span>картой</span>
+            </div>
+            <div>
+              <img src="/assets/images/icons/qr.svg" alt="">
+              <span>QR-код</span>
+            </div>
+            <div>
+              <img src="/assets/images/icons/percent.svg" alt="">
+              <span>рассрочка</span>
+            </div>
+          </div>
+        </div>
+        <div class="offer-time">
+          <span>до повышения цены</span>
+          <div class="time-left">
+            <h2>04:05:05</h2>
+            <div>
+              <span>ДНЯ</span>
+              <span>ЧАСОВ</span>
+              <span>МИНУТ</span>
+            </div>
+            <div class="time-buttons">
+              <button class="blue-button">Купить</button>
+              <button class="black-button">Консультация</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts-content">
+      <h2 id="contacts">Контакты</h2>
+      <div class="form-block">
+        <div class="form-contacts">
+          <img class="form-person-img" src="/assets/images/content/person.png" alt="">
+          <div class="form-number">
+            <div>
+              <img src="/assets/images/icons/phone.svg" alt="">
+              <span>+7 (911) 921-01-01</span>
+            </div>
+            <div class="form-tg-wh">
+              <img src="/assets/images/icons/whatsapp.svg" alt="">
+              <img src="/assets/images/icons/telegram.svg" alt="">
+            </div>
+          </div>
+          <div class="form-map-point">
+            <div>
+              <img src="/assets/images/icons/map-point.svg" alt="">
+              <span>г. Москва, ул. Нижняя Красносельская, д. 35, <br> стр. 59, БЦ «Красносельский», офис 405</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-feedback">
+          <h2>Форма обратной связи</h2>
+          <div style="display: block;">
+            <div style="display: flex;">
+              <div class="form-group" style="margin-right: 20px;">
+                <label class="form-label">Ваше имя <span class="required">✦</span></label>
+                <input type="text" id="name" class="form-input" placeholder="Максим" />
+                <div class="error-message" id="nameError">Поле обязательно к заполнению</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Номер телефона <span class="required">✦</span></label>
+                <input type="tel" id="phone" class="form-input" placeholder="+7 (3532) 66-66-55" maxlength="18" />          <div class="error-message" id="phoneError">Поле обязательно к заполнению</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Ваш e-mail<span class="required">✦</span></label>
+              <input type="email" id="mail" class="form-input" />          <div class="error-message" id="mailError">Поле обязательно к заполнению</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Сообщение<span class="required">✦</span></label>
+              <input type="text" class="form-input" placeholder="Введите сообщение..."/>          <div class="error-message" id="textError">Поле обязательно к заполнению</div>
+            </div>
+            <div style="display: flex;">
+              <button class="black-button">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="/assets/images/icons/logo.svg" alt="">
+  </footer>
+
+  <div id="feedbackModal" class="modal-overlay" style="display: none;">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Заполните форму</h2>
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+
+      <form id="feedbackForm">
+        <div class="form-group">
+          <label class="form-label">Ваше имя <span class="required">✦</span></label>
+          <input type="text" id="name" class="form-input" placeholder="Максим" />
+          <div class="error-message" id="nameError">Поле обязательно к заполнению</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Номер телефона <span class="required">✦</span></label>
+          <input type="tel" id="phone" class="form-input" placeholder="+7 (3532) 66-66-55" maxlength="18" />          <div class="error-message" id="phoneError">Поле обязательно к заполнению</div>
+        </div>
+        
+        <!-- Ключ добавить, для капчи
+        <div class="form-group recaptcha-container">
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onRecaptchaSuccess"></div>
+        </div> -->
+
+        <button type="submit" class="submit-btn" id="submitBtn" disabled>Отправить</button>
+      </form>
+      <div id="successScreen" class="success-screen" style="display: none;">
+        <p class="success-message">Ваша заявка успешно отправлена!</p>
+        <img src="assets/images/icons/success.gif" alt="Успешно" class="success-gif">
+      </div>
+    </div>
+  </div>
+  <div id="mobileMenuOverlay" class="mobile-menu-overlay" style="display: none;"></div>
+  <script src="index.js"></script>
+</body>
+</html>
