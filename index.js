@@ -9,12 +9,12 @@ class DayNightSwitcher {
     this.nightText = document.querySelector('.night-text');
     
     this.images = {
-      day: './assets/images/backgrounds/day.png',
-      night: './assets/images/backgrounds/night.png',
-      grayBack: './assets/images/backgrounds/gray-back.svg',
-      sunHalf: './assets/images/content/sun-half.png',
-      moonHalf: './assets/images/content/moon-half.png',
-      grayHalf: './assets/images/content/gray-half.png'
+      day: 'assets/images/backgrounds/day.png',
+      night: 'assets/images/backgrounds/night.png',
+      grayBack: 'assets/images/backgrounds/gray-back.svg',
+      sunHalf: 'assets/images/content/sun-half.png',
+      moonHalf: 'assets/images/content/moon-half.png',
+      grayHalf: 'assets/images/content/gray-half.png'
     };
     
     this.init();
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const starIcon = star.querySelector('.star-icon');
       
       // Меняем иконку на желтую звезду
-      starIcon.src = '/assets/images/icons/yellow-star.png';
+      starIcon.src = '.ssets/images/icons/yellow-star.png';
       star.classList.add('lit');
       
       // Анимация появления текста
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
     stars.forEach(star => {
       star.classList.remove('lit');
       const starIcon = star.querySelector('.star-icon');
-      starIcon.src = '/assets/images/icons/star.svg';
+      starIcon.src = 'assets/images/icons/star.svg';
       const starText = star.querySelector('.star-text');
       starText.style.opacity = '0';
       starText.style.transform = 'translateY(10px)';
