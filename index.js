@@ -9,12 +9,12 @@ class DayNightSwitcher {
     this.nightText = document.querySelector('.night-text');
     
     this.images = {
-      day: 'assets/images/backgrounds/day.png',
-      night: 'assets/images/backgrounds/night.png',
+      day: 'assets/images/backgrounds/day.webp',
+      night: 'assets/images/backgrounds/night.webp',
       grayBack: 'assets/images/backgrounds/gray-back.svg',
-      sunHalf: 'assets/images/content/sun-half.png',
-      moonHalf: 'assets/images/content/moon-half.png',
-      grayHalf: 'assets/images/content/gray-half.png'
+      sunHalf: 'assets/images/content/sun-half.webp',
+      moonHalf: 'assets/images/content/moon-half.webp',
+      grayHalf: 'assets/images/content/gray-half.webp'
     };
     
     this.init();
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const starIcon = star.querySelector('.star-icon');
       
       // Меняем иконку на желтую звезду
-      starIcon.src = 'assets/images/icons/yellow-star.png';
+      starIcon.src = 'assets/images/icons/yellow-star.webp';
       star.classList.add('lit');
       
       // Анимация появления текста

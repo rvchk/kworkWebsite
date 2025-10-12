@@ -218,7 +218,7 @@ h2 {
   margin: 0 auto;
   padding: 16px 24px 112px;
   text-align: center;
-  background: url('assets/images/backgrounds/hero-background.png') no-repeat center center/cover;
+  background: url('assets/images/backgrounds/hero-background.webp') no-repeat center center/cover;
   background-position-y: -10vw;
   -webkit-mask-image: linear-gradient(
         to bottom,
@@ -819,6 +819,7 @@ h2 {
 
 .form-group {
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .form-label {
@@ -1043,7 +1044,7 @@ h2 {
       black 75%,
       transparent 100%
   );
-  background-image: url('assets/images/backgrounds/day.png');
+  background-image: url('assets/images/backgrounds/day.webp');
   background-size: cover;
   filter: blur(8px);
   height: 100%;
@@ -1091,7 +1092,7 @@ h2 {
 }
 
 .sun-half {
-  background-image: url('assets/images/content/sun-half.png');
+  background-image: url('assets/images/content/sun-half.webp');
   left: 0;
   position: absolute;
   top: 0;
@@ -1105,7 +1106,7 @@ h2 {
 }
 
 .moon-half {
-  background-image: url('assets/images/content/gray-half.png');
+  background-image: url('assets/images/content/gray-half.webp');
   right: 0;
   position: absolute;
   top: 0;
@@ -1351,7 +1352,7 @@ h2 {
 }
 
 .slide {
-  background-image: url('assets/images/content/pillow.png');
+  background-image: url('assets/images/content/pillow.webp');
   height: 500px;
   width: 500px;
   background-size: contain;
@@ -1471,7 +1472,7 @@ h2 {
 }
 
 .stages {
-  background-image: url('assets/images/backgrounds/stars-line.png');
+  background-image: url('assets/images/backgrounds/stars-line.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1579,7 +1580,7 @@ h2 {
       transparent 0%, 
       transparent 95%, 
       rgba(255,255,255,0.3) 100%),
-    url('assets/images/content/orange-dna.png') repeat-x;
+    url('assets/images/content/orange-dna.webp') repeat-x;
   background-size: auto 100%;
   background-position: 0 0;
   position: relative;
@@ -1593,7 +1594,7 @@ h2 {
       transparent 0%, 
       transparent 95%, 
       rgba(255,255,255,0.3) 100%),
-    url('assets/images/content/green-dna.png') repeat-x;
+    url('assets/images/content/green-dna.webp') repeat-x;
   background-size: auto 100%;
   background-position: 0 0;
   position: relative;
@@ -1607,7 +1608,7 @@ h2 {
       transparent 0%, 
       transparent 95%, 
       rgba(255,255,255,0.3) 100%),
-    url('assets/images/content/blue-dna.png') repeat-x;
+    url('assets/images/content/blue-dna.webp') repeat-x;
   background-size: auto 100%;
   background-position: 0 0;
   position: relative;
@@ -1621,7 +1622,7 @@ h2 {
       transparent 0%, 
       transparent 95%, 
       rgba(255,255,255,0.3) 100%),
-    url('assets/images/content/green-orange-dna.png') repeat-x;
+    url('assets/images/content/green-orange-dna.webp') repeat-x;
   background-size: auto 100%;
   background-position: 0 0;
   position: relative;
@@ -1770,7 +1771,7 @@ h2 {
 .order-content {
   position: relative;
   max-width: 1200px;
-  background-image: url("assets/images/backgrounds/night.png");
+  background-image: url("assets/images/backgrounds/night.webp");
   background-size: contain;
   height: 550px;
   border-radius: 20px;
@@ -1792,7 +1793,7 @@ h2 {
   position: absolute;
   height: 450px;
   width: 100%;
-  background-image: url('assets/images/backgrounds/grid-back.png');
+  background-image: url('assets/images/backgrounds/grid-back.webp');
   background-size: cover;
   z-index: 5;
   bottom: -50px;

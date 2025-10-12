@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preload" as="image" href="assets/images/backgrounds/hero-background.png" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gassets.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -37,12 +38,12 @@
           </svg>
         </button>
         <ul>
-          <li><a href="#">Назначение</a></li>
-          <li><a href="#">Преимущества</a></li>
-          <li><a href="#">Принцип работы</a></li>
-          <li><a href="#">Вопросы</a></li>
-          <li><a href="#">Цена</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#problems">Назначение</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#principle">Принцип работы</a></li>
+          <li><a href="#questions">Вопросы</a></li>
+          <li><a href="#price">Цена</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
 
@@ -58,7 +59,13 @@
     <section class="hero">
       <h1 class="hero-title">АЛЬФА-КОЛЫБЕЛЬ<br>МАЯТНИКОВАЯ КРОВАТЬ</h1>
       <div class="hero-visual">
-        <img src="assets/images/content/bed.png" alt="Модель кровати" class="hero-image">
+        <img 
+          src="assets/images/content/bed.webp" 
+          alt="Модель кровати" 
+          class="hero-image"
+          fetchpriority="high"
+          loading="eager"
+        >
       </div>
       <p class="hero-subtitle-strong">
         <strong>
@@ -78,7 +85,7 @@
   <section class="problems">
     <h2 class="problems-title" id="problems">Какие проблемы решает<br><strong>маятниковая кровать?</strong></h2>
     <div class="problems-stage">
-      <img src="assets/images/content/bed2.png" alt="Кровать" class="problems-image" />
+      <img src="assets/images/content/bed2.webp" alt="Кровать" class="problems-image" />
       <ul class="problem-ring">
         <li class="problem" style="--angle:-150deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>бессонница</span></li>
         <li class="problem" style="--angle:-170deg"><img src="assets/images/icons/check.svg" alt="" aria-hidden="true"><span>нервное напряжение</span></li>
@@ -152,30 +159,30 @@
     
     <div class="principle-content">
       <div class="visual-item">
-        <img src="assets/images/content/bed.png" alt="Кровать" class="visual-image">
+        <img src="assets/images/content/bed.webp" alt="Кровать" class="visual-image">
       </div>
       <p class="principle-text">Маятниковая кровать совершает 60-70 мягких покачиваний в минуту, воздействует на вестибулярный аппарат и дает мозгу сигнал безопасности. Это помогает быстрее заснуть и сделать сон глубже</p>
       <div class="visual-item">
-        <img src="assets/images/content/ear-system.png" alt="Вестибулярный аппарат" class="visual-image">
+        <img src="assets/images/content/ear-system.webp" alt="Вестибулярный аппарат" class="visual-image">
       </div>
       <p class="principle-text">Маятниковая кровать работает по тому же принципу <br> что и детская люлька</p>
       <div class="visual-item">
-        <img src="assets/images/content/sleeping-man.png" alt="Спящий человек" class="visual-image">
+        <img src="assets/images/content/sleeping-man.webp" alt="Спящий человек" class="visual-image">
       </div>
       <p class="principle-text">В утробе плод 9 месяцев живет в ритме сердца матери — этот звук ассоциируется у него с покоем и безопасностью. Вестибулярный аппарат, который находится во внутреннем ухе, реагирует на ритмичные покачивания. Поэтому мягкое укачивание воспринимается мозгом как знакомый сигнал безопасности: тревога снижается, тело расслабляется, сон становится спокойным и крепким</p>
     </div>
 
     <div class="principle-visual">
       <div class="visual-item">
-        <img src="assets/images/content/bed.png" alt="Кровать" class="visual-image">
+        <img src="assets/images/content/bed.webp" alt="Кровать" class="visual-image">
       </div>
       <img src="assets/images/icons/arrow.svg" alt="" class="visual-arrow" aria-hidden="true">
       <div class="visual-item">
-        <img src="assets/images/content/ear-system.png" alt="Вестибулярный аппарат" class="visual-image">
+        <img src="assets/images/content/ear-system.webp" alt="Вестибулярный аппарат" class="visual-image">
       </div>
       <img src="assets/images/icons/arrow.svg" alt="" class="visual-arrow" aria-hidden="true">
       <div class="visual-item">
-        <img src="assets/images/content/sleeping-man.png" alt="Спящий человек" class="visual-image">
+        <img src="assets/images/content/sleeping-man.webp" alt="Спящий человек" class="visual-image">
       </div>
     </div>
   </section>
@@ -186,11 +193,11 @@
       — днём и ночью
     </h2>
     <div class="day-night-mobile">
-      <img src="assets/images/content/sun-half.png" alt="" class="sun">
+      <img src="assets/images/content/sun-half.webp" alt="" class="sun">
       <h2 class="sun-text">
         <strong>Днём - снимает стресс</strong>, успокаивает нервную систему и снижает тревожность. Достаточно прилечь на 15 минут
       </h2>
-      <img src="assets/images/content/moon-half.png" alt="" class="moon">
+      <img src="assets/images/content/moon-half.webp" alt="" class="moon">
       <h2 id="moon-text">
         <strong>Ночью - помогает быстрее заснуть</strong>, улучшает качество сна и уменьшает ночные пробуждения
       </h2>
@@ -241,13 +248,13 @@
       </div>
 
       <div class="visual-items visual-items-mobile">
-        <img src="assets/images/content/mobile-app.png" alt="Кровать">
-        <img src="assets/images/content/controller.png" alt="Кровать">
+        <img src="assets/images/content/mobile-app.webp" alt="Кровать">
+        <img src="assets/images/content/controller.webp" alt="Кровать">
       </div>
     
         <!-- Пункт 2 -->
         <div class="specs-item">
-          <img src="assets/images/icons/wrench.png" alt="" class="specs-icon">
+          <img src="assets/images/icons/wrench.webp" alt="" class="specs-icon">
           <div class="specs-text" style="margin-bottom: 80px;">
             <strong>Усиленный механизм</strong><br>
             Надежный и долговечный. Рассчитан на вес до 120 кг
@@ -255,7 +262,7 @@
         </div>
 
         <div class="rounded-visual-item visual-items-mobile">
-          <img src="assets/images/content/construction.png" alt="" aria-hidden="true">
+          <img src="assets/images/content/construction.webp" alt="" aria-hidden="true">
         </div>
     
         <!-- Пункт 3 -->
@@ -288,11 +295,11 @@
     
       <div class="specs-visual">
         <div class="visual-items">
-          <img src="assets/images/content/mobile-app.png" alt="Кровать">
-          <img src="assets/images/content/controller.png" alt="Кровать">
+          <img src="assets/images/content/mobile-app.webp" alt="Кровать">
+          <img src="assets/images/content/controller.webp" alt="Кровать">
         </div>
         <div class="rounded-visual-item">
-          <img src="assets/images/content/construction.png" alt="" aria-hidden="true">
+          <img src="assets/images/content/construction.webp" alt="" aria-hidden="true">
         </div>
       </div>
     </div>
@@ -554,7 +561,7 @@
     <div class="order-content">
       <h2>Закажи Альфа Колыбель <br> сегодня со скидкой</h2>
       <div class="order-grid"></div>
-      <img class="order-content-img" src="assets/images/content/bed3.png" alt="">
+      <img class="order-content-img" src="assets/images/content/bed3.webp" alt="">
       <div class="offer-block">
         <div class="offer-price">
           <span>СО СКИДКОЙ СЕЙЧАС</span>
@@ -604,7 +611,7 @@
       <h2 id="contacts">Контакты</h2>
       <div class="form-block">
         <div class="form-contacts">
-          <img class="form-person-img" src="assets/images/content/person.png" alt="">
+          <img class="form-person-img" src="assets/images/content/person.webp" alt="">
           <div class="form-number">
             <div>
               <img src="assets/images/icons/phone.svg" alt="">
