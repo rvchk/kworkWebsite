@@ -43,7 +43,7 @@
           <li><a href="#principle">Принцип работы</a></li>
           <li><a href="#questions">Вопросы</a></li>
           <li><a href="#price">Цена</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#mobile-contacts">Контакты</a></li>
         </ul>
       </nav>
 
@@ -55,31 +55,24 @@
     </div>
   </header>
 
-  <main class="page-content">
-    <section class="hero">
-      <h1 class="hero-title">АЛЬФА-КОЛЫБЕЛЬ<br>МАЯТНИКОВАЯ КРОВАТЬ</h1>
-      <div class="hero-visual">
-        <img 
-          src="assets/images/content/bed.webp" 
-          alt="Модель кровати" 
-          class="hero-image"
-          fetchpriority="high"
-          loading="eager"
-        >
-      </div>
-      <p class="hero-subtitle-strong">
-        <strong>
-          Крепкий сон
-        </strong> 
-        без таблеток
-        <strong>
-          через 15 минут
-        </strong> 
-      </p>
-      <p class="hero-subtitle-note">на кровати, работающей на простых понятных принципах</p>
-      <button class="hero-cta" type="button" onclick="openModal()">Получить консультацию</button>
-    </section>
-  </main>
+  <section class="hero">
+    <h1 class="hero-title">АЛЬФА-КОЛЫБЕЛЬ<br>МАЯТНИКОВАЯ КРОВАТЬ</h1>
+    <div class="hero-visual">
+      <img src="assets/images/backgrounds/bed-base.webp" alt="Кровать низ" class="bed-base hero-image" />
+      <img src="assets/images/content/bed.webp" alt="Матрас" class="amp30 hero-image" fetchpriority="high" loading="eager" />
+    </div>
+    <p class="hero-subtitle-strong">
+      <strong>
+        Крепкий сон
+      </strong> 
+      без таблеток
+      <strong>
+        через 15 минут
+      </strong> 
+    </p>
+    <p class="hero-subtitle-note">на кровати, работающей на простых понятных принципах</p>
+    <button class="hero-cta" type="button" onclick="openModal()">Получить консультацию</button>
+  </section>
   
   
   <section class="problems">
@@ -157,8 +150,8 @@
     <p class="principle-subtitle">понятен, прост и изучен</p>
     
     <div class="principle-content">
-      <div class="visual-item">
-        <img src="assets/images/content/bed.webp" alt="Кровать" class="visual-image">
+      <div class="visual-item bed-visual-item">
+        <img src="assets/images/content/bed.webp" alt="Кровать" class="visual-image amp30">
       </div>
       <p class="principle-text">Маятниковая кровать совершает 60-70 мягких покачиваний в минуту, воздействует на вестибулярный аппарат и дает мозгу сигнал безопасности. Это помогает быстрее заснуть и сделать сон глубже</p>
       <div class="visual-item">
@@ -172,8 +165,8 @@
     </div>
 
     <div class="principle-visual">
-      <div class="visual-item">
-        <img src="assets/images/content/bed.webp" alt="Кровать" class="visual-image">
+      <div class="visual-item bed-visual-item">
+        <img src="assets/images/content/bed.webp" alt="Кровать" class="visual-image amp30">
       </div>
       <img src="assets/images/icons/arrow.svg" alt="" class="visual-arrow" aria-hidden="true">
       <div class="visual-item">
@@ -368,8 +361,8 @@
         А теперь <strong>закройте глаза</strong> и представьте чудный сон. Как все еще возможно спать как младенец. Высыпаться и быть бодрым, сильным, продуктвиным, веселым и активным в течение дня. В любом возрасте.
       </p>
       <div>
-        <button class="blue-button">Купить</button>
-        <button class="black-button">Задать вопрос</button>
+        <button class="blue-button" onclick="openModal()">Купить</button>
+        <button class="black-button" onclick="openModal()">Задать вопрос</button>
       </div>
     </div>
   </section>
@@ -401,37 +394,67 @@
         </div>
         <div class="slide">
           <div class="slide-content">
-            <p>Аудиальные методы</p>
+            <p>Дыхательные практики</p>
             <span>
-              Белый/розовый/коричневый шум <br>
-              Природные звуки: <br>
-              Дождь, гром <br>
-              Океанские волны, прибой <br>
-              Шум леса, пение птиц <br>
-              Треск костра <br>
-              Аудиокниги и подкасты <br>
-              Бинауральные ритмы <br>
-              Мантры, аффирмации <br>
-              Колыбельные, классическая музыка <br>
-              ASMR 
+              4-7-8 дыхание (вдох 4 сек → <br> задержка 7 сек → выдох 8 сек) <br>
+              Метод квадратного дыхания (4 сек <br> вдох → 4 сек задержка → 4 сек выдох <br> → 4 сек пауза) <br>
+
+              Дыхание животом (диафрагмальное) <br>
+              Альтернативное дыхание <br> через ноздри (Нади Шодхана) <br>
             </span>
           </div>
         </div>
         <div class="slide">
           <div class="slide-content">
-            <p>Аудиальные методы</p>
+            <p>Телесные и расслабляющие <br> практики</p>
             <span>
-              Белый/розовый/коричневый шум <br>
-              Природные звуки: <br>
-              Дождь, гром <br>
-              Океанские волны, прибой <br>
-              Шум леса, пение птиц <br>
-              Треск костра <br>
-              Аудиокниги и подкасты <br>
-              Бинауральные ритмы <br>
-              Мантры, аффирмации <br>
-              Колыбельные, классическая музыка <br>
-              ASMR 
+              Прогрессивная мышечная релаксация <br> (поочередное напряжение <br> расслабление мышц) <br>
+              Йога перед сном <br> (позы: «ребенок», «скручивание», <br> «ноги на стену») <br>
+              Растяжка для сна <br> (легкие упражнения для снятия напряжения) <br>
+              Самомассаж <br> (точечный массаж шеи, висков, стоп) <br>
+              Теплая ванна/душ (за 1-2 часа до сна) <br>
+              Горячий чай/молоко с медом <br> (ромашка, валериана, лаванда)
+            </span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <p>Ментальные и медитативные <br>техники</p>
+            <span>
+              Медитация осознанности (Mindfulness) <br>
+              Йога-нидра <br> («йогический сон» – управляемая медитация) <br>
+              Визуализация <br> (представление уютного места, <br> потока воды и т.д.) <br>
+              Аутотренинг <br> (самовнушение: «Я расслабляюсь… <br> Мои веки тяжелеют…») <br>
+              Метод обратного отсчета <br> (от 100 или 500 с визуализацией чисел) <br>
+              «Армейский метод» засыпания <br> (постепенное расслабление <br> + пустота в мыслях)
+            </span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <p>Внешние средства и гаджеты</p>
+            <span>
+              Маски для сна (с затемнением) <br>
+              Беруши (защита от шума) <br>
+              Утяжеленные одеяла <br> (Deep Pressure Stimulation) <br>
+              Ароматерапия <br> (лаванда, ромашка, иланг-иланг) <br>
+              Специальные подушки <br> (с эффектом памяти, охлаждающие) <br>
+              Умные будильники и трекеры сна <br> (фитнес-браслеты, Oura Ring) <br>
+              Приложения для сна <br> (Calm, Headspace, Sleep Cycle) <br>
+              Светотерапия <br> (теплый свет вечером, <br> синий фильтр на экранах)
+            </span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <p>Поведенческие и когнитивные <br> методы</p>
+            <span>
+              Соблюдение режима сна <br> (засыпание и пробуждение в одно время) <br>
+              Метод ограничения сна <br> (ложиться только при сильной сонливости) <br>
+              Когнитивно-поведенческая терапия бессонницы <br> (CBT-I) <br>
+              Запрет на гаджеты за 1-2 часа до сна <br>
+              Чтение бумажных книг (не электронных!) <br>
+              Ведение дневника тревог <br> (выписать все мысли перед сном)
             </span>
           </div>
         </div>
@@ -490,13 +513,13 @@
       </div>
       <div class="left-stages">
         <div class="stages-card">
-        <div class="card-header">
-          <h3>Легкий сон</h3>
-          <span>Тета-волны + "Сонные веретена" и "K-комплексы"</span>
-          <div class="progress">
-            <h4 class="progress-text">45-55%</H4>
+          <div class="card-header">
+            <h3>Легкий сон</h3>
+            <span>Тета-волны + "Сонные веретена" и "K-комплексы"</span>
+            <div class="progress">
+              <h4 class="progress-text">45-55%</H4>
+            </div>
           </div>
-        </div>
 
         <div class="card-body">
           <p>Сон углубляется, тело расслабляется, температура и сердечный ритм снижаются. Мозг обрабатывает и консолидирует память</p>
@@ -504,7 +527,7 @@
 
         <div class="green-orange-dna-wave dna-wave">
           
-        </div>
+          </div>
         </div>
         <div class="stages-card">
           <div class="card-header">
@@ -567,7 +590,7 @@
     <div class="qna-content" id="questions">
       <div class="answers">
         <h2>Ответы на частые вопросы</h2>
-        <div class="faq-item open-question">
+        <div class="faq-item">
           <div class="faq-question">Какая гарантия? <img src="assets/images/icons/mini-star.svg" alt=""></div>
           <div class="faq-answer">
             На кровать - 1 год. На механизм качения - 1 год. Но мы очень дружелюбны. 
@@ -575,110 +598,45 @@
           </div>
         </div>
 
-        <div class="faq-item open-question">
+        <div class="faq-item">
           <div class="faq-question">Какой вес выдерживает кровать? <img src="assets/images/icons/mini-star.svg" alt=""></div>
           <div class="faq-answer">
-            На кровать - 1 год. На механизм качения - 1 год. Но мы очень дружелюбны. 
-            Всегда идем навстречу и готовы исправить проблемы даже по истечению срока гарантии.
+            Кровать рассчитана на вес до 120 кг. Если ваш все более 120 кг - информация для вас. Она выдержит и более, но тогда механизм качения будет работать меньше. Возможно вам этого будет достаточно. Либо мы спроектируем для вас новую модель по прежней цене
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-question">С какого возраста рекомендуется покупать? <img src="assets/images/icons/mini-star.svg" alt=""></div>
           <div class="faq-answer">
-
+            Использовать можно взрослым и детям с 5 лет
           </div>
         </div>
-        <button class="black-button pc">Заказать кровать</button>
+        <button class="black-button pc" onclick="openModal()">Заказать кровать</button>
       </div>
       <div class="your-question">
         <p>Не нашли ответа на свой вопрос?</p>
         <span>Задайте нужный вопрос сейчас и получите скидку 10% уже сегодня</span>
-        <button class="blue-button" id="price">Задать вопрос</button>
+        <button class="blue-button" onclick="openModal()">Задать вопрос</button>
       </div>
     </div>
   </section>
 
-  <section class="contacts mobile">
-    <div class="contacts-content">
-      <h2 id="contacts" class="pc">Контакты</h2>
-      <div class="form-block">
-        <div class="form-contacts">
-          <img class="form-person-img" src="assets/images/content/person.webp" alt="">
-          <div class="form-number">
-            <div>
-              <img src="assets/images/icons/phone.svg" alt="">
-              <span>+7 (911) 921-01-01</span>
-            </div>
-            <div class="form-tg-wh">
-              <img src="assets/images/icons/whatsapp.svg" alt="">
-              <img src="assets/images/icons/telegram.svg" alt="">
-            </div>
-          </div>
-          <div class="form-map-point">
-            <div>
-              <img src="assets/images/icons/map-point.svg" alt="">
-              <span>г. Москва, ул. Нижняя Красносельская, д. 35, <br> стр. 59, БЦ «Красносельский», офис 405</span>
-            </div>
-          </div>
-        </div>
-        <div class="form-feedback">
-          <h2>Форма обратной связи</h2>
-          <div style="display: block;">
-            <div style="display: flex;">
-              <div class="form-group pc" style="margin-right: 20px;">
-                <label class="form-label">Ваше имя <span class="required">✦</span></label>
-                <input type="text" id="name" class="form-input" placeholder="Максим" />
-                <div class="error-message" id="nameError">Поле обязательно к заполнению</div>
-              </div>
-              <div class="form-group pc">
-                <label class="form-label">Номер телефона <span class="required">✦</span></label>
-                <input type="tel" id="phone" class="form-input" placeholder="+7 (3532) 66-66-55" maxlength="18" />          <div class="error-message" id="phoneError">Поле обязательно к заполнению</div>
-              </div>
-            </div>
-            <div class="mobile">
-              <div class="form-group" style="margin-right: 20px;">
-                <label class="form-label">Ваше имя <span class="required">✦</span></label>
-                <input type="text" id="name" class="form-input" placeholder="Максим" />
-                <div class="error-message" id="nameError">Поле обязательно к заполнению</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label">Номер телефона <span class="required">✦</span></label>
-                <input type="tel" id="phone" class="form-input" placeholder="+7 (3532) 66-66-55" maxlength="18" />          <div class="error-message" id="phoneError">Поле обязательно к заполнению</div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Ваш e-mail<span class="required">✦</span></label>
-              <input type="email" id="mail" class="form-input" />          <div class="error-message" id="mailError">Поле обязательно к заполнению</div>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Сообщение<span class="required">✦</span></label>
-              <input type="text" class="form-input" placeholder="Введите сообщение..."/>          <div class="error-message" id="textError">Поле обязательно к заполнению</div>
-            </div>
-            <div style="display: flex;">
-              <button class="black-button">Отправить</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="order">
+  <section class="order" id="price">
     <div class="order-content">
       <h2>Закажи Альфа Колыбель <br> сегодня со скидкой</h2>
       <div class="offer-time mobile">
           <span>до повышения цены</span>
           <div class="time-left">
-            <h2>04:05:05</h2>
+            <h2 class="countdown-timer">04:05:05</h2>
             <div>
-              <span>ДНЯ</span>
               <span>ЧАСОВ</span>
               <span>МИНУТ</span>
+              <span>СЕКУНД</span>
             </div>
+            <h3>следующая цена 60 тр</h3>
             <div class="time-buttons">
-              <button class="blue-button pc">Купить</button>
-              <button class="black-button pc">Консультация</button>
+              <button class="blue-button pc" onclick="openModal()">Купить</button>
+              <button class="black-button pc" onclick="openModal()">Консультация</button>
             </div>
           </div>
       </div>
@@ -713,40 +671,45 @@
         <div class="offer-time pc">
           <span>до повышения цены</span>
           <div class="time-left">
-            <h2>04:05:05</h2>
+            <h2 class="countdown-timer">04:05:05</h2>
             <div>
-              <span>ДНЯ</span>
               <span>ЧАСОВ</span>
               <span>МИНУТ</span>
+              <span>СЕКУНД</span>
             </div>
+            <h3>следующая цена 60 тр</h3>
             <div class="time-buttons">
-              <button class="blue-button">Купить</button>
-              <button class="black-button">Консультация</button>
+              <button class="blue-button" onclick="openModal()">Купить</button>
+              <button class="black-button" onclick="openModal()">Консультация</button>
             </div>
           </div>
         </div>
       </div>
       <div class="time-buttons">
-        <button class="blue-button mobile">Купить</button>
-        <button class="black-button mobile">Консультация</button>
+        <button class="blue-button mobile" onclick="openModal()">Купить</button>
+        <button class="black-button mobile" onclick="openModal()">Консультация</button>
       </div>
     </div>
   </section>
 
-  <section class="contacts pc">
+  <section class="contacts">
     <div class="contacts-content">
-      <h2 id="contacts">Контакты</h2>
-      <div class="form-block">
+      <h2 id="contacts" class="pc">Контакты</h2>
+      <div class="form-block" id="mobile-contacts">
         <div class="form-contacts">
           <img class="form-person-img" src="assets/images/content/person.webp" alt="">
           <div class="form-number">
             <div>
               <img src="assets/images/icons/phone.svg" alt="">
-              <span>+7 (911) 921-01-01</span>
+              <span>+7 (931) 636-33-53</span>
             </div>
             <div class="form-tg-wh">
-              <img src="assets/images/icons/whatsapp.svg" alt="">
-              <img src="assets/images/icons/telegram.svg" alt="">
+              <a href="https://wa.me/79316363353">
+                <img src="assets/images/icons/whatsapp.svg" alt="">
+              </a>
+              <a href="https://t.me/79316363353 ">
+                <img src="assets/images/icons/telegram.svg" alt="">
+              </a>
             </div>
           </div>
           <div class="form-map-point">
@@ -756,30 +719,40 @@
             </div>
           </div>
         </div>
-        <div class="form-feedback">
+         <div class="form-feedback">
           <h2>Форма обратной связи</h2>
-          <div style="display: block;">
-            <div style="display: flex;">
-              <div class="form-group" style="margin-right: 20px;">
-                <label class="form-label">Ваше имя <span class="required">✦</span></label>
-                <input type="text" id="name" class="form-input" placeholder="Максим" />
-                <div class="error-message" id="nameError">Поле обязательно к заполнению</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label">Номер телефона <span class="required">✦</span></label>
-                <input type="tel" id="phone" class="form-input" placeholder="+7 (3532) 66-66-55" maxlength="18" />          <div class="error-message" id="phoneError">Поле обязательно к заполнению</div>
-              </div>
+          <div style="display: block;" id="forms">
+            <div class="form-group" style="margin-right: 20px;">
+              <label class="form-label">Ваше имя <span class="required">✦</span></label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Максим" />
+              <div class="error-message" id="contact-nameError">Поле обязательно к заполнению</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Номер телефона <span class="required">✦</span></label>
+              <input type="tel" id="contact-phone" class="form-input" placeholder="+7 (3532) 66-66-55" maxlength="18" />
+              <div class="error-message" id="contact-phoneError">Поле обязательно к заполнению</div>
             </div>
             <div class="form-group">
               <label class="form-label">Ваш e-mail<span class="required">✦</span></label>
-              <input type="email" id="mail" class="form-input" />          <div class="error-message" id="mailError">Поле обязательно к заполнению</div>
+              <input type="email" id="contact-mail" class="form-input" />
+              <div class="error-message" id="contact-mailError">Поле обязательно к заполнению</div>
             </div>
             <div class="form-group">
               <label class="form-label">Сообщение<span class="required">✦</span></label>
-              <input type="text" class="form-input" placeholder="Введите сообщение..."/>          <div class="error-message" id="textError">Поле обязательно к заполнению</div>
+              <input type="text" id="contact-message" class="form-input" placeholder="Введите сообщение..." />
+              <div class="error-message" id="contact-textError">Поле обязательно к заполнению</div>
             </div>
             <div style="display: flex;">
-              <button class="black-button">Отправить</button>
+              <button class="black-button contactSubmitBtn" id="contactSubmitBtn" type="submit">Отправить</button>
+            </div>
+          </div>
+          <div class="success-screen" id="contactSuccessScreen">
+            <div class="success-content">
+              <div class="success-icon"></div>
+              <img src="assets/images/icons/success.gif" alt="Успешно" class="success-gif">
+              <h3>Спасибо за обращение!</h3>
+              <p>Ваше сообщение успешно отправлено. Мы свяжемся с вами в ближайшее время.</p>
+              <button class="black-button" id="returnBack">Вернуться к форме</button>
             </div>
           </div>
         </div>
@@ -815,7 +788,7 @@
           <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onRecaptchaSuccess"></div>
         </div> -->
 
-        <button type="submit" class="submit-btn" id="submitBtn" disabled>Отправить</button>
+        <button type="submit" class="submit-btn" id="submitBtn">Отправить</button>
       </form>
       <div id="successScreen" class="success-screen" style="display: none;">
         <p class="success-message">Ваша заявка успешно отправлена!</p>
