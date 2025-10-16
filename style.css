@@ -2250,6 +2250,7 @@ footer img {
   .hero-visual {
     margin-top: 50px;
     height: 300px;
+    width: auto;
   }
   .bed-base {
     margin-top: 40px;
@@ -2285,6 +2286,8 @@ footer img {
   .hero-cta {
     font-size: 18px;
     padding-inline: 40px;
+    position: initial;
+    transform: none;
   }
   .problems-title {
     font-size: 24px;
