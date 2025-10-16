@@ -208,7 +208,7 @@ h2 {
   z-index: 0;
   position: relative;
   margin: 0 auto;
-  height: 100vh;
+  height: calc(100vh - 80px);
   padding: 16px 24px 112px;
   text-align: center;
   background: url('assets/images/backgrounds/hero-background.webp') no-repeat center center/cover;
@@ -278,6 +278,10 @@ h2 {
   overflow: hidden;
   z-index: 1;
   box-shadow: 0px 0px 40px 1px rgba(255, 255, 255, 0.342);
+  top: clamp(650px, calc(100vh - 180px), 750px);
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
 }
 
 .hero-cta::before {
@@ -305,9 +309,10 @@ h2 {
 .hero-visual {
   margin: 0 auto 24px;
   position: relative;
-  width: 100%;
+  width: 55%;
   max-width: 500px;
-  height: 500px;
+  height: 420px;
+  margin-bottom: 0px;
 }
 
 .hero-image {
